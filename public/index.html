@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS & Google Fonts -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Weather Check-in</title>
+    </head>
+    <body>
+
+        <div class="container text-center mx-auto">
+            <h1>Welcome to the Weather App</h1>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Check-In</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="logs.html">View Checkins</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-6">
+                  <h1 class="big-heading">Discover your weather. Share it with the world!.</h1>
+                  <input type="textbox" id="checkinUserName" placeholder="Your name">
+                  <button type="button" id="checkinButton" class="btn btn-outline-light">Get Weather!</button>
+                </div>
+                <div class="col-lg-6">
+                  <img class="title-image" src="images/weather.png" alt="weather-mockup">
+                </div>
+            </div>
+
+            <div class="container">
+            <div class="card mx-auto" style="width: 18rem;">
+                <div class="card-header text-center">
+                Your Local Weather
+                </div>
+                <ul class="list-group text-left list-group-flush">
+                <li class="list-group-item">Latitude: <span id="latitudeDisplay"></span></li>
+                <li class="list-group-item">Longitude: <span id="longitudeDisplay"></span></li>
+                <li class="list-group-item">It's currently: <span id="descriptionDisplay"></span></li>
+                <li class="list-group-item">Temperature: <span id="temperatureDisplay"></span></li>
+                </ul>
+            </div>
+            </div>
+            
+            
+        </div>
+        
+        <!-- Application Javascript -->
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+
+   
+body {
+       font-family: 'Montserrat', sans-serif;
+       text-align: center;
+       background-color: #7fdbda;
+       color: black;
+   }
+   
+h1, h2, h3, h4, h5 h6 {
+       font-family: 'Montserrat', sans-serif;
+       color: #fff;
+   }
+   
+p {
+       font-family: Arial, Helvetica, sans-serif;
+       color: gray;
+   }
+   
+.feature-title {
+       color: black;
+       font-size: 1.5rem;
+   }
+   
