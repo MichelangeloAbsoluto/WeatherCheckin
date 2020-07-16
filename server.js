@@ -28,7 +28,7 @@ app.get('/weather/:userLocation', async (request, response) => {
     let [userLatitude, userLongitude] = locationParameters;
 
     // OpenWeather API call
-    let openWeatherAPIKey = process.env;
+    let openWeatherAPIKey = process.env.API_KEY;
     let openWeather_api_url = `https://api.openweathermap.org/data/2.5/weather?lat=${userLatitude}&lon=${userLongitude}&units=imperial&&appid=${openWeatherAPIKey}`;
     let openWeatherResponse = await fetch(openWeather_api_url);
     let openWeatherJSON = await openWeatherResponse.json();
